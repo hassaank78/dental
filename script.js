@@ -27,7 +27,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 document.querySelector('#booking-form').addEventListener('submit', event => {
   event.preventDefault();
   const fields = Object.fromEntries(new FormData(event.currentTarget));
-  const message = `Hello ${doctor}, I would like to book an appointment at ${clinic}.\nName: ${fields.name}\nService: ${fields.service}\nClinic address: ${address}`;
+  const message = `Name: ${fields.name}\nService: ${fields.service}`;
   const whatsappUrl = `https://wa.me/${phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
   const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   if (!whatsappWindow) window.location.assign(whatsappUrl);
