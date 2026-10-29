@@ -27,7 +27,7 @@ body{padding-top:68px}
 html{scroll-padding-top:78px}
 #appointment,#home,#about,#services,#results,#reviews,#contact{scroll-margin-top:78px}
 @media(max-width:680px){
-  body{padding-top:62px}
+  body{padding-top:0}
   .site-header{height:62px;padding-left:0;padding-right:0;justify-content:flex-end}
   .site-header .brand{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);order:initial}
   .site-header .menu-toggle{position:absolute;left:4%;top:50%;transform:translateY(-50%);order:initial;padding:4px 8px}
@@ -113,7 +113,7 @@ html{scroll-padding-top:78px}
   .site-header .compact-book-label{display:none}
   .nav-links{display:none!important}
   .menu-backdrop,.menu-toggle{display:none!important}
-  body{padding-top:62px}
+  body{padding-top:0}
 }
 @media(max-width:360px){
   .site-header{padding-left:3%;padding-right:3%;gap:6px}
@@ -123,10 +123,13 @@ html{scroll-padding-top:78px}
 
 .hero-trust{display:none}
 @media(max-width:680px){
-  .hero-content{padding-top:18px}
-  .hero-trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;max-width:430px;margin:0 0 20px}
-  .hero-trust>div{min-width:0;min-height:58px;padding:8px 5px;border:1px solid #dcebf6;border-radius:11px;background:#ffffffdb;box-shadow:0 4px 12px #193c5e0b;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:2px}
-  .hero-trust strong{font-size:19px;line-height:1.05;color:var(--blue);letter-spacing:-.5px}
-  .hero-trust span{font-size:9px;line-height:1.2;color:#425a72;font-weight:600}
+  .hero-content{padding-top:24px}
+  .hero-actions{margin-bottom:16px}
+  .hero-trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;max-width:430px;margin:0 0 22px;padding:10px 8px 8px;border:1px solid #d4e8f8;border-radius:15px;background:#ffffffed;box-shadow:0 8px 24px #173d5b16;position:relative}
+  .hero-trust::before{content:'TRUSTED DENTAL CARE';grid-column:1/-1;margin:0 0 7px;color:#5b7791;font-size:8px;line-height:1.2;font-weight:800;letter-spacing:1.15px;text-align:center}
+  .hero-trust>div{min-width:0;min-height:52px;padding:4px 5px;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:3px}
+  .hero-trust>div+div{border-left:1px solid #e3edf5}
+  .hero-trust strong{font-size:20px;line-height:1.05;color:var(--blue);letter-spacing:-.5px}
+  .hero-trust span{font-size:9px;line-height:1.2;color:#425a72;font-weight:700}
 }
-@media(max-width:360px){.hero-trust{gap:5px}.hero-trust>div{min-height:56px;padding:7px 3px}.hero-trust strong{font-size:17px}.hero-trust span{font-size:8px}}
+@media(max-width:360px){.hero-trust{padding:9px 5px 7px;margin-bottom:18px}.hero-trust>div{min-height:49px;padding:4px 2px}.hero-trust strong{font-size:17px}.hero-trust span{font-size:8px}}
